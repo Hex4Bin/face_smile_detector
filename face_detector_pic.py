@@ -1,6 +1,7 @@
 from cv2 import cv2
 from random import randrange
 
+
 # Our pre-trained face classifier
 CLASSIFIER_FACE = './haarcascade_frontalface_default.xml'
 
@@ -9,6 +10,7 @@ face_tracker = cv2.CascadeClassifier(CLASSIFIER_FACE)
 
 # load an image and convert it to grayscaled version for test
 img = cv2.imread('2faces.jpg')
+
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # detect faces
